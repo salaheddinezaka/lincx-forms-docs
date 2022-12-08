@@ -1,15 +1,16 @@
+export const getDocsQuery = `
 query documentQuery($relativePath: String!) {
   docs(relativePath: $relativePath) {
     title
     body
     order
   }
-  docsConnection {
+  docsConnection(sort: "order") {
     edges {
       node {
-        order
         title
         section
+        order
         _sys {
           filename
           collection {
@@ -20,3 +21,4 @@ query documentQuery($relativePath: String!) {
     }
   }
 }
+`;

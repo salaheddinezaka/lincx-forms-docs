@@ -6,7 +6,7 @@ export const sideMenuItems = (sideNavFiles) => {
 
   // Create a section-to-children mapping
   const groupsMapping = {};
-  for (const file of files) {
+  for (const file of files.sort((a, b) => a.node.order - b.node.order)) {
     const { title } = file.node;
     const {
       filename,

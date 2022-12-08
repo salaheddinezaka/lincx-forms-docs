@@ -1,5 +1,5 @@
 const siteMetadata = {
-  title: "Tina Docs Example",
+  title: "Lincx Form Builder Docs",
   description: "Power your docs with Tina + MDX",
   githubRepositoryURL: "https://github.com/tinacms/tina-docs-example",
   socialImage: "/images/social.jpg",

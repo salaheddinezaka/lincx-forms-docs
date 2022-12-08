@@ -19,6 +19,11 @@ const schema = {
           name: "section",
         },
         {
+          type: "number",
+          label: "Order",
+          name: "order",
+        },
+        {
           type: "rich-text",
           label: "Body",
           name: "body",
