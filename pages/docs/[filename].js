@@ -9,8 +9,6 @@ import ReactPlayer from "react-player/lazy";
 import Page404 from "../404.js";
 import { useTina } from "tinacms/dist/react";
 import { client } from "../../.tina/__generated__/client";
-import { getDocsQuery } from "../../queries/docs";
-
 const components = {
   Callout: (props) => {
     return <Callout callout={props} />;

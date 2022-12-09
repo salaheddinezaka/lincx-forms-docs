@@ -5,6 +5,7 @@ import {
   ColorModeProvider,
   th,
 } from "@xstyled/styled-components";
+import '../styles/globals.css'
 
 import { theme } from "../config/theme";
 const GlobalStyle = createGlobalStyle`
