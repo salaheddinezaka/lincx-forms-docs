@@ -27,7 +27,17 @@ const components = {
     return <FeaturesBlock features={props.featureList} />;
   },
   VideoPlayer: (props) => {
-    return <ReactPlayer controls="true" url={props.url} />;
+    // <iframe  src="https://www.loom.com/embed/f4853da64a074612a9472cf65e519909" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    return (
+      <iframe
+        src={props.url}
+        width="640"
+        height="416"
+        webkitallowfullscreen="true"
+        mozallowfullscreen="true"
+        allowFullScreen
+      ></iframe>
+    );
   },
 };
 
