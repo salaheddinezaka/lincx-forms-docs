@@ -9,6 +9,8 @@ import ReactPlayer from "react-player/lazy";
 import Page404 from "../404.js";
 import { useTina } from "tinacms/dist/react";
 import { client } from "../../.tina/__generated__/client";
+import { useColorMode } from "@xstyled/styled-components";
+import { useEffect } from "react";
 const components = {
   Callout: (props) => {
     return <Callout callout={props} />;
@@ -27,11 +29,25 @@ const components = {
     return <FeaturesBlock features={props.featureList} />;
   },
   VideoPlayer: (props) => {
-    return <ReactPlayer controls="true" url={props.url} />;
+    // <iframe  src="https://www.loom.com/embed/f4853da64a074612a9472cf65e519909" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    return (
+      <iframe
+        src={props.url}
+        width="640"
+        height="416"
+        webkitallowfullscreen="true"
+        mozallowfullscreen="true"
+        allowFullScreen
+      ></iframe>
+    );
   },
 };
 
 function DocPage(props) {
+  const [mode, setMode] = useColorMode();
+  useEffect(() => {
+    setMode("dark");
+  }, []);
   const { data } = useTina({
     query: props.query,
     variables: props.variables,

@@ -6,7 +6,7 @@ export function primaryColor(color) {
 }
 
 export const theme = {
-  initialColorModeName: 'light',
+  initialColorModeName: 'dark',
   ...defaultTheme,
   global: css`
     html,

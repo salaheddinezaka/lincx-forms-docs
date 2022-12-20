@@ -1,0 +1,19 @@
+---
+title: Dynamic Connections
+section: Core Concepts
+order: 4
+---
+
+# Dynamic Connections
+
+<VideoPlayer url="https://www.loom.com/embed/8bd3a4b3b6af4987a3b6f55a72504618" />
+
+Dynamic connections in Lincx-Forms allow you to specify which page of the form pages should be displayed next based on the values entered by the user on previous or current pages. This can be useful for creating more dynamic forms that can adapt to the needs of the user as they progress through the form.
+
+To implement dynamic connections in Lincx-Forms with multi-page steps, you will need to follow these steps:
+
+1. You need to have multiple pages created, and they need to have an element that has suggestions like RadioButtons, DropDown, and Range Slider.
+2. Connect the page that will have a dynamic connection with two or more pages with the first page
+3. Connect the same page with the second page, this will opens up a modal with a form that helps you determine the key/field on which the dynamic connections will be based. This could be based on the current start page or another page on the form.
+4. Identify the specific values that will trigger the dynamic connections. For example, if the key/field is a Radion Button  loanPurpose with multiple options like Purchase, Refinance, or Equity, you will need to specify which option(s) will open which page. And this goes for all the other dynamic connections.
+

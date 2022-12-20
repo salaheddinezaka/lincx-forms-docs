@@ -2,6 +2,7 @@ import React from 'react'
 import styled from '@xstyled/styled-components'
 import { AppHeader } from './AppHeader'
 import { Head } from './Head'
+import { AppNav } from './AppNav'
 
 const StickyHeader = styled.div`
   position: sticky;
